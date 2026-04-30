@@ -1,0 +1,220 @@
+{
+  "exam_metadata": {
+    "section": "ISC",
+    "exam_format": "MCQ Only",
+    "total_questions_in_bank": 10,
+    "version": "1.1"
+  },
+  "questions": [
+    {
+      "id": "ISC-MCQ-001",
+      "content_area": "Area I: Information Systems and Data Management",
+      "skill_level": "Remembering and Understanding",
+      "topic": "IT Infrastructure",
+      "question_text": "Which of the following best describes the primary function of a hypervisor in a virtualized IT environment?",
+      "options": [
+        "To encrypt data at rest within a virtual machine.",
+        "To monitor network traffic for malicious activity.",
+        "To allocate physical hardware resources to multiple virtual machines.",
+        "To act as a load balancer between physical servers."
+      ],
+      "correct_answer_index": 2,
+      "option_explanations": [
+        "Incorrect. Encryption is handled by cryptographic software or hardware modules, not the hypervisor.",
+        "Incorrect. Monitoring network traffic is the function of a firewall or Intrusion Detection System (IDS), not a hypervisor.",
+        "Correct. A hypervisor creates and runs virtual machines by allocating physical hardware resources (CPU, RAM, storage) to them.",
+        "Incorrect. A load balancer distributes network traffic across multiple servers; it does not allocate hardware resources to create VMs."
+      ],
+      "reference_material": "AICPA Blueprint Area I, Section A"
+    },
+    {
+      "id": "ISC-MCQ-002",
+      "content_area": "Area II: Security, Confidentiality, and Privacy",
+      "skill_level": "Application",
+      "topic": "Threats and Attacks",
+      "question_text": "An attacker intercepts a communication between two parties and alters the data before forwarding it to the intended recipient. This scenario describes which type of attack?",
+      "options": [
+        "Distributed Denial of Service (DDoS)",
+        "Man-in-the-Middle (MitM)",
+        "SQL Injection",
+        "Cross-Site Scripting (XSS)"
+      ],
+      "correct_answer_index": 1,
+      "option_explanations": [
+        "Incorrect. DDoS attacks aim to overwhelm a system with traffic to make it unavailable, not alter communications.",
+        "Correct. A MitM attack occurs when a perpetrator positions themselves between a user and an application to eavesdrop or alter data.",
+        "Incorrect. SQL injection targets databases by inserting malicious code into input fields.",
+        "Incorrect. XSS involves injecting malicious scripts into trusted websites, not intercepting communications in transit."
+      ],
+      "reference_material": "AICPA Blueprint Area II, Section B"
+    },
+    {
+      "id": "ISC-MCQ-003",
+      "content_area": "Area III: Considerations for SOC Engagements",
+      "skill_level": "Analysis",
+      "topic": "SOC Reporting",
+      "question_text": "During a SOC 2 Type 2 engagement, the service auditor notes that the service organization implemented a new logical access control system mid-year. How should this impact the auditor's testing approach?",
+      "options": [
+        "The auditor should only test the new system since it is the current control in place.",
+        "The auditor must test both the old system and the new system to cover the entire reporting period.",
+        "The auditor should issue an adverse opinion due to the lack of control consistency.",
+        "The auditor should test the new system and rely on management's assertion for the old system."
+      ],
+      "correct_answer_index": 1,
+      "option_explanations": [
+        "Incorrect. A Type 2 report covers a period of time, so testing only the new system leaves a gap in the audit period.",
+        "Correct. In a Type 2 report, the auditor must opine on the operating effectiveness of controls throughout the entire specified period.",
+        "Incorrect. A change in systems is normal business operations and does not automatically warrant an adverse opinion if controls operated effectively.",
+        "Incorrect. The auditor must obtain sufficient appropriate evidence for the whole period; relying solely on management assertion for half the year is insufficient."
+      ],
+      "reference_material": "AICPA Blueprint Area III, Section B"
+    },
+    {
+      "id": "ISC-MCQ-004",
+      "content_area": "Area I: Information Systems and Data Management",
+      "skill_level": "Application",
+      "topic": "System Development Life Cycle (SDLC)",
+      "question_text": "To enforce segregation of duties within an IT department, which two roles should inherently be kept separate to prevent unauthorized code from reaching the live environment?",
+      "options": [
+        "Systems Analyst and Database Administrator",
+        "Application Developer and Quality Assurance Tester",
+        "Application Developer and System Administrator/Deployer",
+        "Help Desk Technician and Network Engineer"
+      ],
+      "correct_answer_index": 2,
+      "option_explanations": [
+        "Incorrect. While these roles should generally be separated, they are not the primary pair that introduces unauthorized code into production.",
+        "Incorrect. While testing and developing should be separated, the most critical risk is a developer pushing unapproved code directly to production.",
+        "Correct. To maintain a secure change management process, developers who write code should never have the permissions to move that code into the live production environment.",
+        "Incorrect. Neither of these roles are typically involved in writing or deploying application code."
+      ],
+      "reference_material": "AICPA Blueprint Area I, Section C"
+    },
+    {
+      "id": "ISC-MCQ-005",
+      "content_area": "Area II: Security, Confidentiality, and Privacy",
+      "skill_level": "Remembering and Understanding",
+      "topic": "Identity and Access Management",
+      "question_text": "A company requires employees to insert a physical smart card into their laptops and enter a PIN to access the network. Which multi-factor authentication (MFA) factors are being used?",
+      "options": [
+        "Something you know and something you are.",
+        "Something you have and something you know.",
+        "Something you are and something you do.",
+        "Something you have and something you are."
+      ],
+      "correct_answer_index": 1,
+      "option_explanations": [
+        "Incorrect. 'Something you are' refers to biometrics (e.g., fingerprint), which is not present here.",
+        "Correct. A smart card is a physical token ('something you have'), and a PIN is memorized information ('something you know').",
+        "Incorrect. Neither biometrics ('are') nor behavioral actions ('do') are described in this scenario.",
+        "Incorrect. 'Something you are' refers to biometrics, which is not being used in this scenario."
+      ],
+      "reference_material": "AICPA Blueprint Area II, Section A"
+    },
+    {
+      "id": "ISC-MCQ-006",
+      "content_area": "Area I: Information Systems and Data Management",
+      "skill_level": "Application",
+      "topic": "Disaster Recovery",
+      "question_text": "Management has determined that their e-commerce website cannot lose more than 4 hours of transactional data in the event of a crash. This metric is known as the:",
+      "options": [
+        "Recovery Time Objective (RTO)",
+        "Service Level Agreement (SLA)",
+        "Recovery Point Objective (RPO)",
+        "Maximum Tolerable Downtime (MTD)"
+      ],
+      "correct_answer_index": 2,
+      "option_explanations": [
+        "Incorrect. RTO refers to how quickly the system must be restored and running again, not how much data can be lost.",
+        "Incorrect. An SLA is a contract between a service provider and a customer, not a disaster recovery data loss metric.",
+        "Correct. RPO defines the maximum acceptable amount of data loss measured in time. If backups are taken every 4 hours, the RPO is met.",
+        "Incorrect. MTD is the total amount of time a business process can be disrupted before the organization suffers unacceptable consequences."
+      ],
+      "reference_material": "AICPA Blueprint Area I, Section D"
+    },
+    {
+      "id": "ISC-MCQ-007",
+      "content_area": "Area III: Considerations for SOC Engagements",
+      "skill_level": "Remembering and Understanding",
+      "topic": "SOC Reporting",
+      "question_text": "Which of the following is the primary difference between a SOC 1 and a SOC 2 report?",
+      "options": [
+        "SOC 1 focuses on internal controls over financial reporting (ICFR), while SOC 2 focuses on trust services criteria.",
+        "SOC 1 is a public-facing document, while SOC 2 is restricted to internal management.",
+        "SOC 1 covers a period of time, whereas SOC 2 covers a specific point in time.",
+        "SOC 1 is issued by a consulting firm, while SOC 2 must be issued by a licensed CPA."
+      ],
+      "correct_answer_index": 0,
+      "option_explanations": [
+        "Correct. SOC 1 addresses controls relevant to a user entity's internal control over financial reporting. SOC 2 addresses security, availability, processing integrity, confidentiality, or privacy.",
+        "Incorrect. Both SOC 1 and SOC 2 reports are generally restricted-use reports meant for user entities and their auditors.",
+        "Incorrect. Both SOC 1 and SOC 2 reports can be either Type 1 (point in time) or Type 2 (period of time).",
+        "Incorrect. Both SOC 1 and SOC 2 reports must be issued by independent CPAs."
+      ],
+      "reference_material": "AICPA Blueprint Area III, Section A"
+    },
+    {
+      "id": "ISC-MCQ-008",
+      "content_area": "Area II: Security, Confidentiality, and Privacy",
+      "skill_level": "Analysis",
+      "topic": "Encryption",
+      "question_text": "Company A wants to send a securely encrypted message to Company B using asymmetric encryption. Whose key should Company A use to encrypt the message?",
+      "options": [
+        "Company A's private key",
+        "Company A's public key",
+        "Company B's private key",
+        "Company B's public key"
+      ],
+      "correct_answer_index": 3,
+      "option_explanations": [
+        "Incorrect. Encrypting with A's private key creates a digital signature, but it does not ensure confidentiality because anyone with A's public key could decrypt it.",
+        "Incorrect. Encrypting with A's public key means only A could decrypt it, which doesn't help Company B.",
+        "Incorrect. Company A does not have access to Company B's private key (it must be kept secret).",
+        "Correct. In asymmetric encryption, to ensure confidentiality, the sender encrypts the message using the recipient's (Company B's) public key. Only Company B's private key can decrypt it."
+      ],
+      "reference_material": "AICPA Blueprint Area II, Section C"
+    },
+    {
+      "id": "ISC-MCQ-009",
+      "content_area": "Area I: Information Systems and Data Management",
+      "skill_level": "Remembering and Understanding",
+      "topic": "Data Integration",
+      "question_text": "In the context of data warehousing, which phase of the ETL process involves converting raw data into a standard format suitable for analysis?",
+      "options": [
+        "Extraction",
+        "Transformation",
+        "Loading",
+        "Querying"
+      ],
+      "correct_answer_index": 1,
+      "option_explanations": [
+        "Incorrect. Extraction is the process of pulling data from source systems.",
+        "Correct. The Transformation phase cleans, formats, and converts data into a usable structure for the target data warehouse.",
+        "Incorrect. Loading is the phase where the transformed data is actually written into the target database.",
+        "Incorrect. Querying happens after ETL is complete and end-users are analyzing the data."
+      ],
+      "reference_material": "AICPA Blueprint Area I, Section B"
+    },
+    {
+      "id": "ISC-MCQ-010",
+      "content_area": "Area II: Security, Confidentiality, and Privacy",
+      "skill_level": "Application",
+      "topic": "Privacy Frameworks",
+      "question_text": "Under major privacy frameworks, the principle of 'data minimization' requires organizations to do which of the following?",
+      "options": [
+        "Retain user data indefinitely to ensure historical accuracy.",
+        "Encrypt all data regardless of its sensitivity level.",
+        "Collect only the personal data strictly necessary for a specific purpose.",
+        "Share data only with vendors who have a SOC 2 Type 2 report."
+      ],
+      "correct_answer_index": 2,
+      "option_explanations": [
+        "Incorrect. Retaining data indefinitely violates the principle of storage limitation.",
+        "Incorrect. While encryption is a good security practice, it is not the definition of data minimization.",
+        "Correct. Data minimization dictates that organizations should only collect and hold personal information that is absolutely necessary to fulfill the stated business purpose.",
+        "Incorrect. Vendor management is important, but it is a distinct concept from the principle of minimizing data collection."
+      ],
+      "reference_material": "AICPA Blueprint Area II, Section D"
+    }
+  ]
+}
