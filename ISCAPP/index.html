@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC Exam Prep | Master Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h1>ISC Master Study Tool</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+            <p id="question-number">Question 1 of --</p>
+        </div>
+
+        <div class="quiz-body">
+            <h2 id="question-text">Loading question...</h2>
+            <div class="options-container" id="options">
+                </div>
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="hidden">Next Question</button>
+        </div>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h1>Quiz Complete!</h1>
+        <p id="score-text"></p>
+        <button onclick="location.reload()">Try Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
