@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC CPA Exam Prep | Study Tool</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <header class="dashboard">
+        <div class="stat-box">
+            <span class="stat-label">Rank</span>
+            <span id="user-rank" class="stat-value">Intern</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Score</span>
+            <span id="score-display" class="stat-value">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Daily Streak</span>
+            <span id="streak-display" class="stat-value">0 🔥</span>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        
+        <div class="progress-section">
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-text">Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span></p>
+        </div>
+
+        <div class="question-metadata">
+            <span id="content-area-tag" class="badge area-badge">Loading Area...</span>
+            <span id="skill-level-tag" class="badge skill-badge">Loading Skill...</span>
+            <span id="topic-tag" class="badge topic-badge">Loading Topic...</span>
+        </div>
+
+        <h2 id="question-text">Loading your first ISC question...</h2>
+        
+        <div id="options-container" class="options-grid">
+            </div>
+
+        <div id="explanation-box" class="hidden">
+            <div class="explanation-content">
+                <h3 id="explanation-title">Rationale</h3>
+                <p id="explanation-text"></p>
+                <div class="reference-box">
+                    <strong>Source:</strong> <span id="reference-text"></span>
+                </div>
+            </div>
+            <button id="next-btn" class="primary-btn">Next Question &rarr;</button>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
